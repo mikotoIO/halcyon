@@ -1,0 +1,16 @@
+{
+  "files": {
+    "ignore": ["**/*/api.gen.ts"]
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "rules": {
+      "correctness": {
+        "noConstructorReturn": "off",
+        "noUnreachableSuper": "off"
+      }
+    }
+  }
+}
