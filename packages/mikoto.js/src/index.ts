@@ -1,3 +1,2 @@
-export function foo() {
-	console.log("hello world :D :D :D");
-}
+export * from "./managers";
+export * from "./MikotoClient";

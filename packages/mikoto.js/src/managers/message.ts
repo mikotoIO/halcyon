@@ -2,8 +2,8 @@ import { proxy, ref } from "valtio/vanilla";
 import type { MikotoClient } from "../MikotoClient";
 import { MessageExt } from "../api.gen";
 import { ZSchema } from "../helpers/ZSchema";
-import type { MikotoChannel } from "./channel";
 import { Manager } from "./base";
+import type { MikotoChannel } from "./channel";
 
 export class MikotoMessage extends ZSchema(MessageExt) {
 	client!: MikotoClient;

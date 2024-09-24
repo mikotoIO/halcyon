@@ -25,6 +25,7 @@ export function ZSchema<
 			Object.assign(this, schema.parse(value));
 		}
 		static parse<T extends typeof res>(this: T, value: unknown): any {
+			// biome-ignore lint/complexity/noThisInStatic: <explanation>
 			const parsed = new this(schema.parse(value)) as any;
 			return parsed;
 		}
